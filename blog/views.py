@@ -1,9 +1,7 @@
-from django.http import HttpResponse
 from django.shortcuts import render
+from django.views import generic
+from .models import Post
 
 # Create your views here.
-def my_blog(request):
-    """
-    A simple view that returns a 'Hello, blog!' text response
-    """
-    return HttpResponse("Hello, blog!")
+class PostList(generic.ListView):
+    model = Post
