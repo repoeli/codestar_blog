@@ -2,3 +2,6 @@
 __pycache__/
 
 env.py
+.env
+
+blog/fixtures/
